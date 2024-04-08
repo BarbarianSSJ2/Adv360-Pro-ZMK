@@ -78,15 +78,5 @@
             >;
         };
 
-        layer_test {
-            bindings = <
- &trans  &trans  &trans  &trans  &trans  &trans            &trans                                                  &trans  &trans  &trans  &trans  &trans  &trans  &trans
- &trans  &trans  &trans  &trans  &trans  &trans            &trans                                                  &trans  &trans  &trans  &trans  &trans  &trans  &trans
- &trans  &trans  &trans  &trans  &trans  &trans            &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
- &trans  &trans  &trans  &trans  &trans  &trans                            &trans                  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
- &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans                  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
-            >;
-        };
-
     };
 };
