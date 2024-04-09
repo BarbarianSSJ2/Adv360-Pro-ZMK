@@ -1,3 +1,9 @@
+macro_spanish: macro_spanish{
+compatible = "zmk,behavior-macro";
+label = "macro_spanish";
+#binding-cells = <0>;
+bindings = <&mt LGUI SPACE>;
+};
 macro_quotes: macro_quotes{
 compatible = "zmk,behavior-macro";
 label = "macro_quotes";
