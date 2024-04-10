@@ -198,11 +198,11 @@
 
         LAYER_ACCENTS {
             bindings = <
-&trans  &trans   &trans  &trans   &trans  &trans  &trans                                      &trans            &trans  &trans   &trans   &trans   &trans  &trans
-&trans  &trans   &trans  &EGRAVE  &trans  &trans  &trans                                      &MACRO_CORCHETES  &trans  &UGRAVE  &IGRAVE  &OGRAVE  &trans  &trans
-&trans  &AGRAVE  &trans  &trans   &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans            &trans  &trans   &trans   &trans   &trans  &trans
-&trans  &trans   &trans  &trans   &trans  &trans                  &trans      &trans                            &trans  &trans   &trans   &trans   &trans  &trans
-&trans  &trans   &trans  &trans   &trans          &trans  &trans  &trans      &trans  &trans  &trans                    &trans   &trans   &trans   &trans  &trans
+&trans  &trans   &trans  &trans   &trans  &trans  &trans                                      &trans            &trans  &trans      &trans   &trans   &trans  &trans
+&trans  &trans   &trans  &EGRAVE  &trans  &trans  &trans                                      &MACRO_CORCHETES  &trans  &UDIERESIS  &IGRAVE  &OGRAVE  &trans  &trans
+&trans  &AGRAVE  &trans  &trans   &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans            &trans  &trans      &trans   &trans   &trans  &trans
+&trans  &trans   &trans  &trans   &trans  &trans                  &trans      &trans                            &trans  &trans      &trans   &trans   &trans  &trans
+&trans  &trans   &trans  &trans   &trans          &trans  &trans  &trans      &trans  &trans  &trans                    &trans      &trans   &trans   &trans  &trans
             >;
         };
     };
