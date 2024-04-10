@@ -136,18 +136,13 @@
 
         LANG_SWITCH {
             bindings = <&kp LG(SPACE)>;
-            key-positions = <38 35>;
+            key-positions = <70 75 60 65>;
             layers = <0 4>;
         };
 
         SOFT_OFF {
             bindings = <&GRACIAS>;
             key-positions = <0 13 65 70>;
-        };
-
-        macro_email {
-            bindings = <&MACRO_EMAIL>;
-            key-positions = <65 70 75 60>;
         };
     };
 
