@@ -35,6 +35,8 @@
             label = "TAP_ACCENT_A";
             #binding-cells = <0>;
             bindings = <&kp A>, <&AGRAVE>;
+
+            tapping-term-ms = <100>;
         };
 
         TAP_ACCENT_E: TAP_ACCENT_E {
@@ -42,6 +44,8 @@
             label = "TAP_ACCENT_E";
             #binding-cells = <0>;
             bindings = <&kp E>, <&EGRAVE>;
+
+            tapping-term-ms = <100>;
         };
 
         TAP_ACCENT_U: TAP_ACCENT_U {
@@ -49,6 +53,8 @@
             label = "TAP_ACCENT_U";
             #binding-cells = <0>;
             bindings = <&kp U>, <&UGRAVE>;
+
+            tapping-term-ms = <100>;
         };
 
         TAP_ACCENT_I: TAP_ACCENT_I {
@@ -56,6 +62,8 @@
             label = "TAP_ACCENT_I";
             #binding-cells = <0>;
             bindings = <&kp I>, <&IGRAVE>;
+
+            tapping-term-ms = <100>;
         };
 
         TAP_ACCENT_O: TAP_ACCENT_O {
@@ -63,6 +71,8 @@
             label = "TAP_ACCENT_O";
             #binding-cells = <0>;
             bindings = <&kp O>, <&OGRAVE>;
+
+            tapping-term-ms = <100>;
         };
     };
 
@@ -101,6 +111,20 @@
             bindings = <&kp LEFT_BRACKET &kp O>;
             label = "OGRAVE";
         };
+
+        MACRO_PARENTESIS: MACRO_PARENTESIS {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LPAR &kp RPAR &kp LEFT_ARROW>;
+            label = "MACRO_PARENTESIS";
+        };
+
+        MACRO_CORCHETES: MACRO_CORCHETES {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_BRACKET &kp RIGHT_BRACKET &kp LEFT_ARROW>;
+            label = "MACRO_CORCHETES";
+        };
     };
 
     combos {
@@ -108,7 +132,7 @@
 
         LANG_SWITCH {
             bindings = <&kp LG(SPACE)>;
-            key-positions = <37 38>;
+            key-positions = <38 35>;
             layers = <0 4>;
         };
     };
@@ -118,11 +142,11 @@
 
         default_layer {
             bindings = <
-&kp EQUAL  &kp N1         &kp N2    &kp N3         &kp N4     &kp N5  &tog 1                                                    &mo 3      &kp N6  &kp N7         &kp N8         &kp N9         &kp N0    &kp MINUS
-&kp TAB    &kp Q          &kp W     &TAP_ACCENT_E  &kp R      &kp T   &kp RA(Q)                                                 &none      &kp Y   &TAP_ACCENT_U  &TAP_ACCENT_I  &TAP_ACCENT_O  &kp P     &kp BSLH
-&kp ESC    &TAP_ACCENT_A  &kp S     &kp D          &kp F      &kp G   &mo 4      &kp LCTRL  &kp LALT      &kp LGUI   &kp RCTRL  &mo 4      &kp H   &kp J          &kp K          &kp L          &kp SEMI  &kp SQT
-&kp LSHFT  &kp Z          &kp X     &kp C          &kp V      &kp B                         &kp HOME      &kp PG_UP                        &kp N   &kp M          &kp COMMA      &kp DOT        &kp FSLH  &kp RSHFT
-&mo 2      &kp GRAVE      &kp CAPS  &kp LEFT       &kp RIGHT          &kp BSPC   &kp DEL    &kp END       &kp PG_DN  &kp ENTER  &kp SPACE          &kp UP         &kp DOWN       &kp LBKT       &kp RBKT  &mo 2
+&kp EQUAL  &kp N1         &kp N2    &kp N3         &kp N4     &kp N5  &tog 1                                                    &mo 3              &kp N6  &kp N7         &kp N8         &kp N9         &kp N0    &kp MINUS
+&kp TAB    &kp Q          &kp W     &TAP_ACCENT_E  &kp R      &kp T   &kp RA(Q)                                                 &MACRO_PARENTESIS  &kp Y   &TAP_ACCENT_U  &TAP_ACCENT_I  &TAP_ACCENT_O  &kp P     &kp BSLH
+&kp ESC    &TAP_ACCENT_A  &kp S     &kp D          &kp F      &kp G   &mo 4      &kp LCTRL  &kp LALT      &kp LGUI   &kp RCTRL  &mo 4              &kp H   &kp J          &kp K          &kp L          &kp SEMI  &kp SQT
+&kp LSHFT  &kp Z          &kp X     &kp C          &kp V      &kp B                         &kp HOME      &kp PG_UP                                &kp N   &kp M          &kp COMMA      &kp DOT        &kp FSLH  &kp RSHFT
+&mo 2      &kp GRAVE      &kp CAPS  &kp LEFT       &kp RIGHT          &kp BSPC   &kp DEL    &kp END       &kp PG_DN  &kp ENTER  &kp SPACE                  &kp UP         &kp DOWN       &kp LBKT       &kp RBKT  &mo 2
             >;
         };
 
@@ -138,11 +162,11 @@
 
         layer_fn {
             bindings = <
-&kp F1  &kp F2  &kp F3  &kp F4  &kp F5  &kp F6  &tog 1                                              &mo 3            &kp F7  &kp F8  &kp F9  &kp F10  &kp F11  &kp F12
-&trans  &trans  &trans  &trans  &trans  &trans  &macro_dquotes                                      &macro_brackets  &trans  &trans  &trans  &trans   &trans   &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &macro_parens   &trans  &trans      &trans  &trans  &none            &trans  &trans  &trans  &trans   &trans   &trans
-&trans  &trans  &trans  &trans  &trans  &trans                          &trans      &trans                           &trans  &trans  &trans  &trans   &trans   &trans
-&trans  &trans  &trans  &trans  &trans          &trans          &trans  &trans      &trans  &trans  &trans                   &trans  &trans  &trans   &trans   &trans
+&kp F1  &kp F2  &kp F3  &kp F4  &kp F5  &kp F6  &tog 1                                      &mo 3   &kp F7  &kp F8  &kp F9  &kp F10  &kp F11  &kp F12
+&trans  &trans  &trans  &trans  &trans  &trans  &none                                       &none   &trans  &trans  &trans  &trans   &trans   &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &none   &trans  &trans      &trans  &trans  &none   &trans  &trans  &trans  &trans   &trans   &trans
+&trans  &trans  &trans  &trans  &trans  &trans                  &trans      &trans                  &trans  &trans  &trans  &trans   &trans   &trans
+&trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans      &trans  &trans  &trans          &trans  &trans  &trans   &trans   &trans
             >;
         };
 
@@ -158,11 +182,11 @@
 
         LAYER_ACCENTS {
             bindings = <
-&trans  &trans   &trans  &trans   &trans  &trans  &trans                                      &trans  &trans  &trans   &trans   &trans   &trans  &trans
-&trans  &trans   &trans  &EGRAVE  &trans  &trans  &trans                                      &trans  &trans  &UGRAVE  &IGRAVE  &OGRAVE  &trans  &trans
-&trans  &AGRAVE  &trans  &trans   &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans   &trans   &trans   &trans  &trans
-&trans  &trans   &trans  &trans   &trans  &trans                  &trans      &trans                  &trans  &trans   &trans   &trans   &trans  &trans
-&trans  &trans   &trans  &trans   &trans          &trans  &trans  &trans      &trans  &trans  &trans          &trans   &trans   &trans   &trans  &trans
+&trans  &trans   &trans  &trans   &trans  &trans  &trans                                      &trans            &trans  &trans   &trans   &trans   &trans  &trans
+&trans  &trans   &trans  &EGRAVE  &trans  &trans  &trans                                      &MACRO_CORCHETES  &trans  &UGRAVE  &IGRAVE  &OGRAVE  &trans  &trans
+&trans  &AGRAVE  &trans  &trans   &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans            &trans  &trans   &trans   &trans   &trans  &trans
+&trans  &trans   &trans  &trans   &trans  &trans                  &trans      &trans                            &trans  &trans   &trans   &trans   &trans  &trans
+&trans  &trans   &trans  &trans   &trans          &trans  &trans  &trans      &trans  &trans  &trans                    &trans   &trans   &trans   &trans  &trans
             >;
         };
     };
