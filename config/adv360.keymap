@@ -35,8 +35,6 @@
             label = "TAP_ACCENT_A";
             #binding-cells = <0>;
             bindings = <&kp A>, <&AGRAVE>;
-
-            tapping-term-ms = <100>;
         };
 
         TAP_ACCENT_E: TAP_ACCENT_E {
@@ -44,8 +42,6 @@
             label = "TAP_ACCENT_E";
             #binding-cells = <0>;
             bindings = <&kp E>, <&EGRAVE>;
-
-            tapping-term-ms = <100>;
         };
 
         TAP_ACCENT_U: TAP_ACCENT_U {
@@ -53,8 +49,6 @@
             label = "TAP_ACCENT_U";
             #binding-cells = <0>;
             bindings = <&kp U>, <&UGRAVE>;
-
-            tapping-term-ms = <100>;
         };
 
         TAP_ACCENT_I: TAP_ACCENT_I {
@@ -62,8 +56,6 @@
             label = "TAP_ACCENT_I";
             #binding-cells = <0>;
             bindings = <&kp I>, <&IGRAVE>;
-
-            tapping-term-ms = <100>;
         };
 
         TAP_ACCENT_O: TAP_ACCENT_O {
