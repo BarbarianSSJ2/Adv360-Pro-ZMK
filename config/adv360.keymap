@@ -122,6 +122,13 @@
             bindings = <&kp LS(G) &kp R &kp A &kp C &kp I &kp A &kp S &kp EXCL>;
             label = "GRACIAS";
         };
+
+        MACRO_EMAIL: MACRO_EMAIL {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp E &kp R &kp I &kp C &kp DOT &kp P &kp O &kp R &kp T &kp N &kp O &kp Y &kp AT &kp H &kp O &kp Y &kp O &kp V &kp E &kp R &kp S &kp E &kp DOT &kp C &kp O &kp M>;
+            label = "MACRO_EMAIL";
+        };
     };
 
     combos {
@@ -136,6 +143,11 @@
         SOFT_OFF {
             bindings = <&GRACIAS>;
             key-positions = <0 13 65 70>;
+        };
+
+        macro_email {
+            bindings = <&MACRO_EMAIL>;
+            key-positions = <65 70 75 60>;
         };
     };
 
@@ -154,11 +166,11 @@
 
         layer_keypad {
             bindings = <
-&kp EQUAL  &kp N1     &kp N2    &kp N3    &kp N4     &kp N5  &trans                                                   &mo 3      &kp N6  &kp KP_NUM  &kp KP_EQUAL  &kp KP_DIVIDE  &kp KP_MULTIPLY  &kp MINUS
-&kp TAB    &kp Q      &kp W     &kp E     &kp R      &kp T   &none                                                    &none      &kp Y   &kp KP_N7   &kp KP_N8     &kp KP_N9      &kp KP_MINUS     &kp BSLH
-&kp ESC    &kp A      &kp S     &kp D     &kp F      &kp G   &none     &kp LCTRL  &kp LALT      &kp LGUI   &kp RCTRL  &none      &kp H   &kp KP_N4   &kp KP_N5     &kp KP_N6      &kp KP_PLUS      &kp SQT
-&kp LSHFT  &kp Z      &kp X     &kp C     &kp V      &kp B                        &kp HOME      &kp PG_UP                        &kp N   &kp KP_N1   &kp KP_N2     &kp KP_N3      &kp KP_ENTER     &kp RSHFT
-&mo 2      &kp GRAVE  &kp CAPS  &kp LEFT  &kp RIGHT          &kp BSPC  &kp DEL    &kp END       &kp PG_DN  &kp ENTER  &kp KP_N0          &kp UP      &kp DOWN      &kp KP_DOT     &kp RBKT         &mo 2
+&kp EQUAL  &kp N1     &kp N2    &kp N3    &kp N4     &kp N5               &trans                                                   &mo 3      &kp N6  &kp KP_NUM  &kp KP_EQUAL  &kp KP_DIVIDE  &kp KP_MULTIPLY  &kp MINUS
+&kp TAB    &kp Q      &kp W     &kp E     &kp R      &kp KP_PLUS          &none                                                    &none      &kp Y   &kp KP_N7   &kp KP_N8     &kp KP_N9      &kp KP_MINUS     &kp BSLH
+&kp ESC    &kp A      &kp S     &kp D     &kp F      &kp KP_SUBTRACT      &none     &kp LCTRL  &kp LALT      &kp LGUI   &kp RCTRL  &none      &kp H   &kp KP_N4   &kp KP_N5     &kp KP_N6      &kp KP_PLUS      &kp SQT
+&kp LSHFT  &kp Z      &kp X     &kp C     &kp V      &kp LS(KP_MULTIPLY)                       &kp HOME      &kp PG_UP                        &kp N   &kp KP_N1   &kp KP_N2     &kp KP_N3      &kp KP_ENTER     &kp RSHFT
+&mo 2      &kp GRAVE  &kp CAPS  &kp LEFT  &kp RIGHT                       &kp BSPC  &kp DEL    &kp END       &kp PG_DN  &kp ENTER  &kp KP_N0          &kp UP      &kp DOWN      &kp KP_DOT     &kp RBKT         &mo 2
             >;
         };
 
