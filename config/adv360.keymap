@@ -63,8 +63,6 @@
             label = "TAP_ACCENT_O";
             #binding-cells = <0>;
             bindings = <&kp O>, <&OGRAVE>;
-
-            tapping-term-ms = <100>;
         };
     };
 
@@ -126,6 +124,11 @@
             bindings = <&kp LG(SPACE)>;
             key-positions = <38 35>;
             layers = <0 4>;
+        };
+
+        SOFT_OFF {
+            bindings = <&soft_off>;
+            key-positions = <0 13 65 70>;
         };
     };
 
