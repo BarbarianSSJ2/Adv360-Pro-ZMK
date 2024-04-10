@@ -48,7 +48,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TAP_ACCENT_U";
             #binding-cells = <0>;
-            bindings = <&kp U>, <&UGRAVE>;
+            bindings = <&kp U>, <&UGRAVE>, <&UDIERESIS>;
         };
 
         TAP_ACCENT_I: TAP_ACCENT_I {
@@ -128,6 +128,13 @@
             #binding-cells = <0>;
             bindings = <&kp E &kp R &kp I &kp C &kp DOT &kp P &kp O &kp R &kp T &kp N &kp O &kp Y &kp AT &kp H &kp O &kp Y &kp O &kp V &kp E &kp R &kp S &kp E &kp DOT &kp C &kp O &kp M>;
             label = "MACRO_EMAIL";
+        };
+
+        UDIERESIS: UDIERESIS {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(LEFT_BRACKET) &kp U>;
+            label = "UDIERESIS";
         };
     };
 
