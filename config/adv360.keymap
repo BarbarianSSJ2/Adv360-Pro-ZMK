@@ -115,6 +115,13 @@
             bindings = <&kp LEFT_BRACKET &kp RIGHT_BRACKET &kp LEFT_ARROW>;
             label = "MACRO_CORCHETES";
         };
+
+        GRACIAS: GRACIAS {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(G) &kp R &kp A &kp C &kp I &kp A &kp S &kp EXCL>;
+            label = "GRACIAS";
+        };
     };
 
     combos {
@@ -127,7 +134,7 @@
         };
 
         SOFT_OFF {
-            bindings = <&soft_off>;
+            bindings = <&GRACIAS>;
             key-positions = <0 13 65 70>;
         };
     };
