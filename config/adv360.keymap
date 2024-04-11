@@ -158,12 +158,12 @@
         };
 
         CAPSCOMBO {
-            bindings = <&kp K_COPY>;
+            bindings = <&kp LC(C)>;
             key-positions = <46 65>;
         };
 
         CAPSCOMBO2 {
-            bindings = <&kp K_PASTE>;
+            bindings = <&kp LC(V)>;
             key-positions = <70 59>;
         };
     };
