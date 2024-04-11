@@ -105,14 +105,14 @@
         MACRO_PARENTESIS: MACRO_PARENTESIS {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LPAR &kp RPAR &kp LEFT_ARROW>;
+            bindings = <&kp LS(N8) &kp LS(N9) &kp LEFT_ARROW>;
             label = "MACRO_PARENTESIS";
         };
 
         MACRO_CORCHETES: MACRO_CORCHETES {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LEFT_BRACKET &kp RIGHT_BRACKET &kp LEFT_ARROW>;
+            bindings = <&kp LS(LEFT_BRACE) &kp LS(RIGHT_BRACKET) &kp LEFT_ARROW>;
             label = "MACRO_CORCHETES";
         };
 
@@ -123,18 +123,18 @@
             label = "GRACIAS";
         };
 
-        MACRO_EMAIL: MACRO_EMAIL {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp E &kp R &kp I &kp C &kp DOT &kp P &kp O &kp R &kp T &kp N &kp O &kp Y &kp AT &kp H &kp O &kp Y &kp O &kp V &kp E &kp R &kp S &kp E &kp DOT &kp C &kp O &kp M>;
-            label = "MACRO_EMAIL";
-        };
-
         UDIERESIS: UDIERESIS {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LS(LEFT_BRACKET) &kp U>;
             label = "UDIERESIS";
+        };
+
+        OBRIGADO: OBRIGADO {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(O) &kp B &kp R &kp I &kp G &kp A &kp D &kp O &kp EXCL>;
+            label = "OBRIGADO";
         };
     };
 
@@ -150,6 +150,21 @@
         SOFT_OFF {
             bindings = <&GRACIAS>;
             key-positions = <0 13 65 70>;
+        };
+
+        OBRIGADO {
+            bindings = <&OBRIGADO>;
+            key-positions = <14 27 65 70>;
+        };
+
+        CAPSCOMBO {
+            bindings = <&kp K_COPY>;
+            key-positions = <46 65>;
+        };
+
+        CAPSCOMBO2 {
+            bindings = <&kp K_PASTE>;
+            key-positions = <70 59>;
         };
     };
 
