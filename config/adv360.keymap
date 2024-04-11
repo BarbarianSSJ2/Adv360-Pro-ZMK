@@ -213,11 +213,11 @@
 
         LAYER_ACCENTS {
             bindings = <
-&trans  &trans                  &trans          &trans            &trans             &trans  &trans                                      &trans            &trans  &trans      &trans   &trans   &trans  &trans
-&trans  &trans                  &trans          &EGRAVE           &trans             &trans  &trans                                      &MACRO_CORCHETES  &trans  &UDIERESIS  &IGRAVE  &OGRAVE  &trans  &trans
-&trans  &AGRAVE                 &trans          &trans            &trans             &trans  &trans  &trans  &trans      &trans  &trans  &trans            &trans  &trans      &trans   &trans   &trans  &trans
-&trans  &trans                  &trans          &trans            &trans             &trans                  &trans      &trans                            &trans  &trans      &trans   &trans   &trans  &trans
-&trans  &kp LG(LA(LEFT_ARROW))  &kp LG(LA(UP))  &kp LG(LA(DOWN))  &kp LG(LA(RIGHT))          &trans  &trans  &trans      &trans  &trans  &trans                    &trans      &trans   &trans   &trans  &trans
+&trans  &trans                  &trans          &trans            &trans             &trans  &trans                                            &trans            &trans  &trans      &trans   &trans   &trans  &trans
+&trans  &trans                  &trans          &EGRAVE           &trans             &trans  &trans                                            &MACRO_CORCHETES  &trans  &UDIERESIS  &IGRAVE  &OGRAVE  &trans  &trans
+&trans  &AGRAVE                 &trans          &trans            &trans             &trans  &trans  &trans  &kp LEFT_ALT      &trans  &trans  &trans            &trans  &trans      &trans   &trans   &trans  &trans
+&trans  &trans                  &trans          &trans            &trans             &trans                  &trans            &trans                            &trans  &trans      &trans   &trans   &trans  &trans
+&trans  &kp LG(LA(LEFT_ARROW))  &kp LG(LA(UP))  &kp LG(LA(DOWN))  &kp LG(LA(RIGHT))          &trans  &trans  &trans            &trans  &trans  &kp TAB                   &trans      &trans   &trans   &trans  &kp LS(TAB)
             >;
         };
     };
