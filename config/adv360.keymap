@@ -136,6 +136,13 @@
             bindings = <&kp LS(O) &kp B &kp R &kp I &kp G &kp A &kp D &kp O &kp EXCL>;
             label = "OBRIGADO";
         };
+
+        ACCENT_TEST_a: ACCENT_TEST_a {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp RIGHT_ALT &kp KP_NUMBER_1 &kp KP_NUMBER_6 &kp KP_NUMBER_0>;
+            label = "ACCENT_TEST_A";
+        };
     };
 
     combos {
