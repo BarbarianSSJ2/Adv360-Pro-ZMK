@@ -13,7 +13,6 @@
 #include <dt-bindings/zmk/backlight.h>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
-#include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/rgb.h>
 
 / {
@@ -174,11 +173,11 @@
 
         default_layer {
             bindings = <
-&kp EQUAL   &kp N1         &kp N2    &kp N3         &kp N4     &kp N5  &tog 1                                                    &mo 3              &kp N6  &kp N7         &kp N8         &kp N9         &kp N0    &kp MINUS
-&kp TAB     &kp Q          &kp W     &TAP_ACCENT_E  &kp R      &kp T   &kp RA(Q)                                                 &MACRO_PARENTESIS  &kp Y   &TAP_ACCENT_U  &TAP_ACCENT_I  &TAP_ACCENT_O  &kp P     &kp BSLH
-&kp ESC     &TAP_ACCENT_A  &kp S     &kp D          &kp F      &kp G   &sl 4      &kp LCTRL  &kp LALT      &kp LGUI   &kp RCTRL  &sl 4              &kp H   &kp J          &kp K          &kp L          &kp SEMI  &kp SQT
-&kt LSHIFT  &kp Z          &kp X     &kp C          &kp V      &kp B                         &kp HOME      &kp PG_UP                                &kp N   &kp M          &kp COMMA      &kp DOT        &kp FSLH  &kt RSHIFT
-&mo 2       &kp GRAVE      &kp CAPS  &kp LEFT       &kp RIGHT          &kp BSPC   &kp DEL    &kp END       &kp PG_DN  &kp ENTER  &kp SPACE                  &kp UP         &kp DOWN       &kp LBKT       &kp RBKT  &mo 2
+&kp EQUAL       &kp N1         &kp N2    &kp N3         &kp N4     &kp N5  &tog 1                                                    &mo 3              &kp N6  &kp N7         &kp N8         &kp N9         &kp N0    &kp MINUS
+&kp TAB         &kp Q          &kp W     &TAP_ACCENT_E  &kp R      &kp T   &kp RA(Q)                                                 &MACRO_PARENTESIS  &kp Y   &TAP_ACCENT_U  &TAP_ACCENT_I  &TAP_ACCENT_O  &kp P     &kp BSLH
+&kp ESC         &TAP_ACCENT_A  &kp S     &kp D          &kp F      &kp G   &sl 4      &kp LCTRL  &kp LALT      &kp LGUI   &kp RCTRL  &sl 4              &kp H   &kp J          &kp K          &kp L          &kp SEMI  &kp SQT
+&kp LEFT_SHIFT  &kp Z          &kp X     &kp C          &kp V      &kp B                         &kp HOME      &kp PG_UP                                &kp N   &kp M          &kp COMMA      &kp DOT        &kp FSLH  &kp RIGHT_SHIFT
+&mo 2           &kp GRAVE      &kp CAPS  &kp LEFT       &kp RIGHT          &kp BSPC   &kp DEL    &kp END       &kp PG_DN  &kp ENTER  &kp SPACE                  &kp UP         &kp DOWN       &kp LBKT       &kp RBKT  &mo 2
             >;
         };
 
