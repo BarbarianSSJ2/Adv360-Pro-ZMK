@@ -9,13 +9,13 @@
  * edit it directly.
  */
 
+#include "../zmk-nodefree-config/helper.h"
+#include "../zmk-nodefree-config/international_chars/spanish.dtsi"
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/backlight.h>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/rgb.h>
-#include "../zmk-nodefree-config/helper.h"
-#include "../zmk-nodefree-config/international_chars/spanish.dtsi"
 
 / {
     behaviors {
@@ -217,8 +217,8 @@
             bindings = <
 &trans  &trans                  &trans          &trans            &trans             &trans  &trans                                            &trans            &trans  &trans      &trans   &trans   &trans  &trans
 &trans  &trans                  &trans          &EGRAVE           &trans             &trans  &trans                                            &MACRO_CORCHETES  &trans  &UDIERESIS  &IGRAVE  &OGRAVE  &trans  &trans
-&trans  &AGRAVE                 &trans          &es_ee            &trans             &trans  &trans  &trans  &kp LEFT_ALT      &trans  &trans  &trans            &trans  &trans      &trans   &trans   &trans  &trans
-&trans  &es_aa                  &trans          &trans            &trans             &trans                  &trans            &trans                            &trans  &trans      &trans   &trans   &trans  &trans
+&trans  &AGRAVE                 &trans          &trans            &trans             &trans  &trans  &trans  &kp LEFT_ALT      &trans  &trans  &trans            &trans  &trans      &trans   &trans   &trans  &trans
+&trans  &trans                  &trans          &trans            &trans             &trans                  &trans            &trans                            &trans  &trans      &trans   &trans   &trans  &trans
 &trans  &kp LG(LA(LEFT_ARROW))  &kp LG(LA(UP))  &kp LG(LA(DOWN))  &kp LG(LA(RIGHT))          &trans  &trans  &trans            &trans  &trans  &kp TAB                   &trans      &trans   &trans   &trans  &kp LS(TAB)
             >;
         };
