@@ -72,6 +72,7 @@
             #binding-cells = <0>;
             bindings = <&kp LEFT_BRACKET &kp A>;
             label = "AGRAVE";
+            tap-ms = <100>;
         };
 
         EGRAVE: EGRAVE {
@@ -79,6 +80,7 @@
             #binding-cells = <0>;
             bindings = <&kp LEFT_BRACKET &kp E>;
             label = "EGRAVE";
+            tap-ms = <100>;
         };
 
         UGRAVE: UGRAVE {
@@ -86,6 +88,7 @@
             #binding-cells = <0>;
             bindings = <&kp LEFT_BRACKET &kp U>;
             label = "UGRAVE";
+            tap-ms = <100>;
         };
 
         IGRAVE: IGRAVE {
@@ -93,6 +96,7 @@
             #binding-cells = <0>;
             bindings = <&kp LEFT_BRACKET &kp I>;
             label = "IGRAVE";
+            tap-ms = <100>;
         };
 
         OGRAVE: OGRAVE {
@@ -100,6 +104,7 @@
             #binding-cells = <0>;
             bindings = <&kp LEFT_BRACKET &kp O>;
             label = "OGRAVE";
+            tap-ms = <100>;
         };
 
         MACRO_PARENTESIS: MACRO_PARENTESIS {
@@ -128,6 +133,7 @@
             #binding-cells = <0>;
             bindings = <&kp LS(LEFT_BRACKET) &kp U>;
             label = "UDIERESIS";
+            tap-ms = <100>;
         };
 
         OBRIGADO: OBRIGADO {
@@ -193,11 +199,11 @@
 
         layer_fn {
             bindings = <
-&kp F1         &kp F2     &kp F3     &kp F4     &kp F5     &kp F6     &tog 1                                                 &mo 3    &kp F7      &kp F8  &kp F9     &kp F10  &kp F11           &kp F12
-&trans         &trans     &trans     &kp UP     &trans     &trans     &kp LA(TAB)                                            &none    &UDIERESIS  &trans  &kp LC(I)  &trans   &kp C_PLAY_PAUSE  &kp C_VOLUME_UP
-&trans         &trans     &kp LEFT   &kp DOWN   &kp RIGHT  &trans     &trans       &trans  &kp LEFT_ALT      &trans  &trans  &none    &trans      &trans  &trans     &trans   &trans            &kp C_VOL_DN
-&kp LC(LS(Z))  &kp LC(Z)  &kp LC(X)  &kp LC(C)  &kp LC(V)  &kp LC(B)                       &trans            &trans                   &trans      &trans  &trans     &trans   &trans            &kp K_MUTE
-&trans         &trans     &trans     &trans     &trans                &trans       &trans  &trans            &trans  &trans  &kp TAB              &trans  &trans     &trans   &trans            &kp LS(TAB)
+&kp F1         &kp F2     &kp F3     &kp F4     &kp F5     &kp F6     &tog 1                                                 &mo 3    &kp F7  &kp F8      &kp F9     &kp F10  &kp F11           &kp F12
+&trans         &trans     &trans     &kp UP     &trans     &trans     &kp LA(TAB)                                            &none    &trans  &UDIERESIS  &kp LC(I)  &trans   &kp C_PLAY_PAUSE  &kp C_VOLUME_UP
+&trans         &trans     &kp LEFT   &kp DOWN   &kp RIGHT  &trans     &trans       &trans  &kp LEFT_ALT      &trans  &trans  &none    &trans  &trans      &trans     &trans   &trans            &kp C_VOL_DN
+&kp LC(LS(Z))  &kp LC(Z)  &kp LC(X)  &kp LC(C)  &kp LC(V)  &kp LC(B)                       &trans            &trans                   &trans  &trans      &trans     &trans   &trans            &kp K_MUTE
+&trans         &trans     &trans     &trans     &trans                &trans       &trans  &trans            &trans  &trans  &kp TAB          &trans      &trans     &trans   &trans            &kp LS(TAB)
             >;
         };
 
