@@ -48,7 +48,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TAP_ACCENT_U";
             #binding-cells = <0>;
-            bindings = <&kp U>, <&UGRAVE>, <&UDIERESIS>;
+            bindings = <&kp U>, <&UGRAVE>;
         };
 
         TAP_ACCENT_I: TAP_ACCENT_I {
@@ -193,11 +193,11 @@
 
         layer_fn {
             bindings = <
-&kp F1         &kp F2     &kp F3     &kp F4     &kp F5     &kp F6     &tog 1                                                 &mo 3    &kp F7  &kp F8  &kp F9     &kp F10  &kp F11           &kp F12
-&trans         &trans     &trans     &kp UP     &trans     &trans     &kp LA(TAB)                                            &none    &trans  &trans  &kp LC(I)  &trans   &kp C_PLAY_PAUSE  &kp C_VOLUME_UP
-&trans         &trans     &kp LEFT   &kp DOWN   &kp RIGHT  &trans     &trans       &trans  &kp LEFT_ALT      &trans  &trans  &none    &trans  &trans  &trans     &trans   &trans            &kp C_VOL_DN
-&kp LC(LS(Z))  &kp LC(Z)  &kp LC(X)  &kp LC(C)  &kp LC(V)  &kp LC(B)                       &trans            &trans                   &trans  &trans  &trans     &trans   &trans            &kp K_MUTE
-&trans         &trans     &trans     &trans     &trans                &trans       &trans  &trans            &trans  &trans  &kp TAB          &trans  &trans     &trans   &trans            &kp LS(TAB)
+&kp F1         &kp F2     &kp F3     &kp F4     &kp F5     &kp F6     &tog 1                                                 &mo 3    &kp F7      &kp F8  &kp F9     &kp F10  &kp F11           &kp F12
+&trans         &trans     &trans     &kp UP     &trans     &trans     &kp LA(TAB)                                            &none    &UDIERESIS  &trans  &kp LC(I)  &trans   &kp C_PLAY_PAUSE  &kp C_VOLUME_UP
+&trans         &trans     &kp LEFT   &kp DOWN   &kp RIGHT  &trans     &trans       &trans  &kp LEFT_ALT      &trans  &trans  &none    &trans      &trans  &trans     &trans   &trans            &kp C_VOL_DN
+&kp LC(LS(Z))  &kp LC(Z)  &kp LC(X)  &kp LC(C)  &kp LC(V)  &kp LC(B)                       &trans            &trans                   &trans      &trans  &trans     &trans   &trans            &kp K_MUTE
+&trans         &trans     &trans     &trans     &trans                &trans       &trans  &trans            &trans  &trans  &kp TAB              &trans  &trans     &trans   &trans            &kp LS(TAB)
             >;
         };
 
